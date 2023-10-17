@@ -4,6 +4,6 @@ resources:
 - ../base
 
 replicas:
-- name: prom
+- name: prometheus
   count: 1
 
