@@ -3,7 +3,7 @@
 ### Getting started with flux bootstrap 
 
 ``` bash
-flux bootstrap github   --owner=$GITHUB_USER   --repository=fluxCD   --branch=main   --path=./cluster/   --personal
+flux bootstrap github   --owner=$GITHUB_USER   --repository=GitOps-fluxCD   --branch=main   --path=./cluster/   --personal
 ```
 
 - After bootstrap a namespace is created called `flux-system` with flux controllers deployed inside it and a repo is initialized, `Flux` monitors manifests under `./cluster` path
