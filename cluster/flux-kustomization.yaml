@@ -26,5 +26,5 @@ spec:
     name: flux-system
   path: ./infra
   prune: true
-  validation: client
+
 
