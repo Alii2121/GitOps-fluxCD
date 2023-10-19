@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - prometheus.yaml
 - image-repo.yaml
-- docker.yaml
+
