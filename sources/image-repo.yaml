@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: py-app
+  namespace: flux-system
+spec:
+  image: docker.io/alii2121/py-app
+  interval: 5m
+  secretRef:
+    name: docker
