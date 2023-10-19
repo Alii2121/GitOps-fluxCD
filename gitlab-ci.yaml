@@ -1,0 +1,9 @@
+before_script:
+- whoami
+- pwd
+- sudo dnf update -y
+
+build-base:
+  stage: build
+  script:
+  - echo "Hello world!"
