@@ -22,4 +22,4 @@ spec:
     namespace: flux-system
   policy:
     semver:
-      range: '>=1.0.0'
+      range: '>=1'
