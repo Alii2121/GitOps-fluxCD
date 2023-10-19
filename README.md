@@ -20,4 +20,4 @@ flux bootstrap github   --owner=$GITHUB_USER   --repository=GitOps-fluxCD   --br
 - Created `HelmCharts` dir and created a release.yaml file to specify `HelmRelease`
 - After pushing to git flux took over and deployed the helm chart 
 
-- testing
+- testing of gitlab trigger 

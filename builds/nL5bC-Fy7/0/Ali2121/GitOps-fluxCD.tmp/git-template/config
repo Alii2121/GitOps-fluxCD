@@ -1,0 +1,6 @@
+[init]
+	defaultBranch = none
+[fetch]
+	recurseSubmodules = false
+[http "https://gitlab.com"]
+	sslCAInfo = /home/ali.marwan@ad.cyshield/GIT-OPS-FLUX/GitOps-fluxCD/builds/nL5bC-Fy7/0/Ali2121/GitOps-fluxCD.tmp/CI_SERVER_TLS_CA_FILE
