@@ -8,3 +8,16 @@ spec:
   interval: 5m
   secretRef:
     name: docker-sec
+
+---
+
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: podinfo
+spec:
+  imageRepositoryRef:
+    name: podinfo
+  policy:
+    semver:
+      range: '>=1.0.0'
