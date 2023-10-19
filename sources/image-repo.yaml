@@ -14,10 +14,12 @@ spec:
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
-  name: podinfo
+  name: py-app
+  namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: podinfo
+    name: py-app
+    namespace: flux-system
   policy:
     semver:
       range: '>=1.0.0'
