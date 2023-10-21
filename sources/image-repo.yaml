@@ -23,5 +23,3 @@ spec:
   policy:
     semver: {}
   tagPattern: "main-*"
-  registry:
-    url: https://index.docker.io/v1/
