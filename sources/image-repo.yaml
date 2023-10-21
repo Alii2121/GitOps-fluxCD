@@ -21,5 +21,8 @@ spec:
     name: py-app
     namespace: flux-system
   policy:
-    numerical:
-      order: asc
+    semver: {}
+  automated: true
+  tagPattern: "py-app:main-*"
+  registry:
+    url: https://index.docker.io/v1/
