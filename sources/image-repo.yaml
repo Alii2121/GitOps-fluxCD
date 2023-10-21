@@ -22,7 +22,6 @@ spec:
     namespace: flux-system
   policy:
     semver: {}
-  automated: true
   tagPattern: "main-*"
   registry:
     url: https://index.docker.io/v1/
