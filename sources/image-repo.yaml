@@ -27,4 +27,4 @@ spec:
   registry:
     url: https://index.docker.io/v1/
     credentialsRef:
-      name: dockerhub-credentials
+      name: docker-sec
