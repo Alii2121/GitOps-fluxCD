@@ -23,6 +23,6 @@ spec:
   policy:
     semver: {}
   automated: true
-  tagPattern: "py-app:main-*"
+  tagPattern: "py-app:main-"
   registry:
     url: https://index.docker.io/v1/
