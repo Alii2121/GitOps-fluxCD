@@ -22,6 +22,7 @@ spec:
     namespace: flux-system
   filterTags:
     pattern: '^main-[a-f0-9]'
+    extract: '[a-f0-9]'
   policy:
     numerical:
       order: asc
