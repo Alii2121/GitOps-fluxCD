@@ -4,6 +4,5 @@ metadata:
   name: grafana
   namespace: monitoring
 spec:
-  type: oci
   interval: 1m
-  url: oci://registry-1.docker.io/bitnamicharts/grafana
+  url: https://grafana.github.io/helm-charts

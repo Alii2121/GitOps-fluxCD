@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: bitnami/grafana
+      chart: grafana
       version: '9.3.2'
       sourceRef:
         kind: HelmRepository
