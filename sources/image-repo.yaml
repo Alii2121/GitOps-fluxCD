@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   image: docker.io/alii2121/py-app
-  interval: 5m
+  interval: 30sec
   secretRef:
     name: docker-sec
 
