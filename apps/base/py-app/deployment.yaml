@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: py-app
-        image: docker.io/alii2121/py-app:main-14 # {"$imagepolicy": "flux-system:py-app"}
+        image: docker.io/alii2121/py-app:main-15 # {"$imagepolicy": "flux-system:py-app"}
       imagePullSecrets:
       - name: docker-sec
         envFrom:
