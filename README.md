@@ -107,6 +107,10 @@ flux bootstrap github   --owner=$GITHUB_USER   --repository=GitOps-fluxCD   --co
 │   │       └── kustomization.yaml
 │   ├── kustomization.yaml
 │   └── Prod
+│       ├── Image-Automation
+│       │   ├── image-automation.yaml
+│       │   ├── image-repo.yaml
+│       │   └── kustomization.yaml
 │       └── py-app
 │           └── kustomization.yaml
 ├── cluster
@@ -126,11 +130,9 @@ flux bootstrap github   --owner=$GITHUB_USER   --repository=GitOps-fluxCD   --co
 │       └── kustomization.yaml
 ├── README.md
 └── sources
-    ├── docker.yaml
-    ├── image-automation.yaml
-    ├── image-repo.yaml
     ├── kustomization.yaml
-    └── prometheus.yaml
+    ├── prometheus.yaml
+    └── secret.yaml
 ```
 
 #### Now flux monitors mainly the `./cluster` path mainly as we specified in the bootstrap command so how does flux see changes on other dirs?

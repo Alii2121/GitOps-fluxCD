@@ -5,5 +5,6 @@ resources:
 - base/redis
 - Prod/py-app
 - Dev/py-app
+- Prod/Image-Automation
 
 
