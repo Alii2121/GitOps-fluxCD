@@ -15,12 +15,12 @@ spec:
     spec:
       containers:
       - name: py-app
+        image: alii2121/py-app:main-7 # {"$imagepolicy": "flux-system:py-app"}
       imagePullSecrets:
       - name: docker-sec
         envFrom:
         - configMapRef:
             name: my-configmap
-        image: alii2121/py-app:main-7 # {"$imagepolicy": "flux-system:py-app"}
         ports:
         - containerPort: 8000
         env:
