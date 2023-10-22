@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: py-app
-  namespace: default
 spec:
   replicas: 1
   selector:
@@ -15,8 +14,16 @@ spec:
     spec:
       containers:
       - name: py-app
+      imagePullSecrets:
+      - name: docker-sec
+        envFrom:
+        - configMapRef:
+            name: my-configmap
         image: alii2121/py-app:main-7 # {"$imagepolicy": "flux-system:py-app"}
         ports:
         - containerPort: 8000
-      imagePullSecrets:
-      - name: docker-sec
+        env:
+        - name: REDIS_HOST
+          value: svc-redis
+        - name: REDIS_PORT
+          value: "6379"
