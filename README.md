@@ -78,7 +78,7 @@ flux bootstrap github   --owner=$GITHUB_USER   --repository=GitOps-fluxCD   --co
 ------------------------------------
 
 ## Structure 
-
+```bash
 .
 ├── apps
 │   ├── base
@@ -119,6 +119,7 @@ flux bootstrap github   --owner=$GITHUB_USER   --repository=GitOps-fluxCD   --co
     ├── image-repo.yaml
     ├── kustomization.yaml
     └── prometheus.yaml
+```
 
 #### Now flux monitors mainly the `./cluster` path mainly as we specified in the bootstrap command so how does flux see changes on other dirs?
 
