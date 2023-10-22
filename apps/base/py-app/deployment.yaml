@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: py-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: py-app
+  template:
+    metadata:
+      labels:
+        app: py-app
+    spec:
+      containers:
+      - name: py-app
+        envFrom:
+        - configMapRef:
+            name: my-configmap
+        image: alii2121/py-app:main-7 # {"$imagepolicy": "flux-system:py-app"}
+        ports:
+        - containerPort: 8000
