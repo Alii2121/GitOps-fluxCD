@@ -16,6 +16,18 @@
   
 
 
+### Tools Used
+
+![K8s](https://img.shields.io/badge/-kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=Python&logoColor=yellow)
+![Docker](https://img.shields.io/badge/Docker-container%20runtime-2496ED?style=for-the-badge&logo=Docker)
+
+- FluxCD 
+- Kind
+- Gitlab
+
+
+
 ### Creating a local `kind` cluster with k8s version 1.28
 
 - Create a kind config yaml file to specify 2 workers and 1 master 
