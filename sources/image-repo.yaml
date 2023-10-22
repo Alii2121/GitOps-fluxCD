@@ -11,7 +11,7 @@ spec:
 
 ---
 
-apiVersion: image.toolkit.fluxcd.io/v1beta1
+apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
   name: py-app
@@ -20,11 +20,8 @@ spec:
   imageRepositoryRef:
     name: py-app
     namespace: flux-system
+  filterTags:
+    pattern: 'main-.*'
   policy:
-    semver: {}
-  automated: true
-  tagPattern: "main-*"
-  registry:
-    url: https://index.docker.io/v1/
-    credentialsRef:
-      name: docker-sec
+    semver:
+      range: '>=1'
