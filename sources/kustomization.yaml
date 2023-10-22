@@ -4,5 +4,5 @@ resources:
 - prometheus.yaml
 - image-repo.yaml
 - image-automation.yaml
-- docker.yaml
+
 
