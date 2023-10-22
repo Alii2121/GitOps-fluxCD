@@ -21,7 +21,8 @@ spec:
     name: py-app
     namespace: flux-system
   filterTags:
-    pattern: 'main-*'
+    pattern: '^main-[a-f0-9]'
   policy:
-    semver:
-      range: '^x'
+    numerical:
+      order: asc
+
